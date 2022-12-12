@@ -83,9 +83,9 @@
         HYPER_Layer {
             label = "Hyper";
             bindings = <
-&kp GRAVE  &kp N1     &kp N2    &kp N3  &kp N4  &kp N5  &kp N6  &kp N7      &kp N8      &kp N9     &kp N0      &kp BSPC
-&trans     &kp F1     &kp F2    &kp F3  &kp F4  &kp F5  &kp F6  &kp MINUS   &kp EQUAL   &kp LBKT   &kp RBKT    &kp BACKSLASH
-&trans     &kp F7     &kp F8    &kp F9  &kp F10 &kp F11 &kp F12 &kp SQT     &kp LEFT    &kp UP     &kp DOWN    &kp RIGHT
+&kp GRAVE  &kp N1     &kp N2    &kp N3  &kp N4  &kp N5  &kp N6  &kp N7      &kp N8      &kp N9         &kp N0      &kp BSPC
+&trans     &kp F1     &kp F2    &kp F3  &kp F4  &kp F5  &kp F6  &kp MINUS   &kp EQUAL   &kp LBKT       &kp RBKT    &kp BACKSLASH
+&kp LSHIFT &kp F7     &kp F8    &kp F9  &kp F10 &kp F11 &kp F12 &kp SQT     &kp COMMA   &kp PERIOD     &kp SLASH   &kp RSHIFT
 #ifdef TBLE_DUAL_2U
                       &trans     &trans              &trans                    &trans       &trans         &trans
 #elif defined(TBLE_MIT)
@@ -103,13 +103,13 @@
         LOWER_Layer {
             label = "Lower";
             bindings = <
-&trans     &kp LBKT   &kp N7     &kp N8      &kp N9    &kp RBKT    &kp C_PREV    &trans         &trans       &trans       &trans     &trans
-&trans     &kp MINUS  &kp N4     &kp N5      &kp N6    &kp EQUAL   &kp C_NEXT    &trans         &trans       &trans       &trans     &trans
-&trans     &kp GRAVE  &kp N1     &kp N2      &kp N3    &kp BSLH    &trans        &trans         &kp LEFT     &kp UP       &kp DOWN   &kp RIGHT
+&trans     &trans   &kp N7     &kp N8      &kp N9    &kp RBKT    &kp C_PREV    &trans      &trans       &trans     &trans     &kp DEL
+&trans     &trans   &kp N4     &kp N5      &kp N6    &kp EQUAL   &kp C_NEXT    &trans      &trans       &trans     &trans     &trans
+&trans     &trans   &kp N1     &kp N2      &kp N3    &kp BSLH    &trans        &trans      &kp LEFT     &kp UP     &kp DOWN   &kp RIGHT
 #ifdef TBLE_DUAL_2U
                      &trans     &kp N0              &trans                 &trans            &trans         &trans
 #elif defined(TBLE_MIT)
-                     &trans     &kp N0      &trans           &none            &kp ESC        &kp DEL      &trans
+                     &kp N0     &kp KP_COMMA     &kp RET           &none            &kp ESC        &trans      &trans
 #else
                      &trans     &kp N0      &trans    &none         &none     &kp ESC        &kp DEL      &trans
 #endif
