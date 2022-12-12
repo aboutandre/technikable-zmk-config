@@ -69,7 +69,7 @@
 #ifdef TBLE_DUAL_2U
                        &kp LCTRL  &kp LALT      &lt HYPER_L SPACE                &lt LOWER_L SPACE              &kp RALT    &kp RCTRL
 #elif defined(TBLE_MIT)
-                       &kp LCTRL  &kp LALT    &kp LEFT_COMMAND  &kp SPACE      &mo LOWER_L    &mo HYPER_L   &mo META_L
+                           &kp LCTRL       &kp LALT     &kp LEFT_COMMAND     &kp SPACE      &mo HYPER_L     &mo LOWER_L     &mo META_L
 #else
                        &kp LCTRL  &kp LALT    &mo HYPER_L         &kp SPACE      &kp SPACE        &mo LOWER_L      &kp RALT    &kp RCTRL
 #endif
